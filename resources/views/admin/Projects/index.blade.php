@@ -46,7 +46,7 @@
                             href="{{ route('admin.projects.show', $project->id) }}">Vedi</a>
                         <a class='btn btn-warning ms-2 text-white'
                             href="{{ route('admin.projects.edit', $project->id) }}">Modifica
-                            progetto</a>
+                        </a>
                         <form method='POST' action="{{ route('admin.projects.destroy', $project->id) }}"
                             class='delete-form'>
                             @csrf

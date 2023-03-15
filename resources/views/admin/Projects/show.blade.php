@@ -9,7 +9,7 @@
     </header>
     <div class="clearfix">
         @if ($project->thumb)
-            <div class="d-flex justify-content-center ">
+            <div class=" ">
                 <img class='me-4 float-start w-25 h-25' src="{{ asset('storage/' . $project->thumb) }}"
                     alt="{{ $project->title }}">
             </div>

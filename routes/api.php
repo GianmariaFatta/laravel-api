@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('projects', ProjectController::class);
 
 // Rotta al dettaglio del progetto
-Route::get('/projects/{project}', [ProjectController::class, 'show']);
+Route::get('/projects/{slug}', [ProjectController::class, 'show']);

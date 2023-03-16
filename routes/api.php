@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+// Rotta della lista dei progetti
 Route::apiResource('projects', ProjectController::class);
+
+// Rotta al dettaglio del progetto
+Route::get('/projects/{project}', [ProjectController::class, 'show']);
